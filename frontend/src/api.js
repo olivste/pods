@@ -1,5 +1,5 @@
 const _VITE_API = import.meta.env.VITE_API_URL;
-const API_URL = (_VITE_API && _VITE_API !== 'VITE_API_URL') ? _VITE_API : 'http://localhost:8080';
+const API_URL = (_VITE_API && _VITE_API !== 'VITE_API_URL') ? _VITE_API : 'http://localhost:8088';
 
 async function request(path, options = {}) {
   const url = `${API_URL}${path}`;

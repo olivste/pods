@@ -50,7 +50,7 @@ No `docker compose`, `GOOGLE_CREDENTIALS_HOST_FILE` aponta para o arquivo no hos
 docker compose up -d
 ```
 
-Frontend: http://localhost:3000
+Frontend: http://localhost:3033
 
 Backend: http://localhost:8080
 
