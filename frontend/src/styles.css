@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  color-scheme: dark;
+  background:
+    radial-gradient(circle at top left, rgba(25, 211, 162, 0.14), transparent 32%),
+    radial-gradient(circle at top right, rgba(79, 157, 255, 0.14), transparent 30%),
+    linear-gradient(180deg, #08111f 0%, #060b15 100%);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}

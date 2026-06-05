@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: inventory-backend
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+app:
+  cors:
+    allowed-origins: ${APP_CORS_ALLOWED_ORIGINS:*}
+
+sheets:
+  application-name: ${GOOGLE_SHEETS_APPLICATION_NAME:Pods Inventory}
+  spreadsheet-id: ${GOOGLE_SHEETS_SPREADSHEET_ID:}
+  credentials-file: ${GOOGLE_APPLICATION_CREDENTIALS:}
+  products-sheet: ${GOOGLE_SHEETS_PRODUCTS_SHEET:Produtos}
+  sales-sheet: ${GOOGLE_SHEETS_SALES_SHEET:Vendas}
+  movements-sheet: ${GOOGLE_SHEETS_MOVEMENTS_SHEET:Movimentacoes}
